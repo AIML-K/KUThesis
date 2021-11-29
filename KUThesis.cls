@@ -156,6 +156,7 @@
   \restoregeometry                         % 여백 되돌림
   \refstepcounter{dummy}
   \makeabstract                            % 초록 페이지 생성
+  \makekrabstract
 
   %\pagenumbering{roman}                   % 2020년 2월 졸업논문 제출시 과학도서관 지적사항
   %\setcounter{page}{1}                    % 
@@ -280,6 +281,18 @@
          \newcommand{\@deptNameKor}{컴퓨터학과}
          \newcommand{\@deptNameShort}{컴퓨터學}
          \newcommand{\@degreeName}{컴퓨터學}} {}
+    \ifthenelse{\equal{#1}{MTH}}
+        {\newcommand{\@deptNameEng}{Mathematics}
+         \newcommand{\@deptNameChn}{數\ 學\ 科}
+         \newcommand{\@deptNameKor}{수학과}
+         \newcommand{\@deptNameShort}{數學}
+         \newcommand{\@degreeName}{理學}} {}
+    \ifthenelse{\equal{#1}{FEN}}
+        {\newcommand{\@deptNameEng}{Financial Engineering}
+         \newcommand{\@deptNameChn}{金\ 融\ 工\ 學\ 協\ 同\ 課\ 程}
+         \newcommand{\@deptNameKor}{금융공학협동과정}
+         \newcommand{\@deptNameShort}{金融工學}
+         \newcommand{\@degreeName}{金融工學}} {}
 }
 \@onlypreamble{\department}
 
