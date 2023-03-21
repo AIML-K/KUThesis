@@ -8,7 +8,8 @@
 이전버전의 TeXLive에서 사용할 경우에는 koTeX을 따로 설치해주세요.
 
 (단, overleaf에서 사용 시 TexLive2021이 적용되면서 에러가 발생합니다. TexLive2020으로 변경하여 사용 바랍니다. @cth127)
-
+**\begin{document}** 관련해서 [readme-issue#27](https://github.com/AIML-K/readme/issues/27)에 대한 해결법
+해당 처리를 어떻게 하는지는 이슈 코멘트에 상세히 기술해두었습니다.
 
 필수로 있어야 하는 파일
 =======================
